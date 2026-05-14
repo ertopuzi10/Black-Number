@@ -1,0 +1,74 @@
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  min-height: 120px;
+}
+
+.title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin: 0 0 0.85rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(42, 42, 54, 0.6);
+  animation: fadeIn 0.35s ease;
+}
+
+.metaRow {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.guessDigits {
+  color: var(--text);
+  letter-spacing: 0.15em;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.idx {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.guess {
+  color: var(--text);
+  letter-spacing: 0.12em;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin: 0;
+}
