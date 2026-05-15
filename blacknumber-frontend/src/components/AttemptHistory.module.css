@@ -72,3 +72,21 @@
   font-size: 0.85rem;
   margin: 0;
 }
+
+@media (max-width: 639px) {
+  .panel {
+    padding: 0.9rem 1rem;
+  }
+
+  .list {
+    font-size: 0.82rem;
+  }
+
+  .guessDigits {
+    word-break: break-all;
+  }
+
+  .metaRow {
+    gap: 0.5rem 1rem;
+  }
+}

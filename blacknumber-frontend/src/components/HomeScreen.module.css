@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: max(1.25rem, env(safe-area-inset-top, 0px)) 1.25rem 1.5rem;
   background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 245, 196, 0.08), transparent),
     var(--bg-deep);
 }
@@ -93,6 +93,28 @@
 .startBtn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
+}
+
+@media (max-width: 639px) {
+  .title {
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  .sub {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+    padding: 0 0.25rem;
+  }
+
+  .card {
+    padding: 1.35rem 1.25rem;
+  }
+
+  .modeBtn,
+  .startBtn {
+    min-height: 48px;
+  }
 }
 
 .error {

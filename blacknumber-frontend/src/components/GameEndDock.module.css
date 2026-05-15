@@ -97,6 +97,30 @@
   color: var(--accent);
 }
 
+@media (max-width: 639px) {
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inlineErr {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+  }
+}
+
 @keyframes dockPulse {
   0%,
   100% {
